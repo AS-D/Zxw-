@@ -1,0 +1,9 @@
+C:\Users\D\source\repos\Xtx\Xtx.Entity\bin\Debug\netcoreapp3.1\Xtx.Entity.deps.json
+C:\Users\D\source\repos\Xtx\Xtx.Entity\bin\Debug\netcoreapp3.1\Xtx.Entity.dll
+C:\Users\D\source\repos\Xtx\Xtx.Entity\bin\Debug\netcoreapp3.1\Xtx.Entity.pdb
+C:\Users\D\source\repos\Xtx\Xtx.Entity\obj\Debug\netcoreapp3.1\Xtx.Entity.csprojAssemblyReference.cache
+C:\Users\D\source\repos\Xtx\Xtx.Entity\obj\Debug\netcoreapp3.1\Xtx.Entity.AssemblyInfoInputs.cache
+C:\Users\D\source\repos\Xtx\Xtx.Entity\obj\Debug\netcoreapp3.1\Xtx.Entity.AssemblyInfo.cs
+C:\Users\D\source\repos\Xtx\Xtx.Entity\obj\Debug\netcoreapp3.1\Xtx.Entity.csproj.CoreCompileInputs.cache
+C:\Users\D\source\repos\Xtx\Xtx.Entity\obj\Debug\netcoreapp3.1\Xtx.Entity.dll
+C:\Users\D\source\repos\Xtx\Xtx.Entity\obj\Debug\netcoreapp3.1\Xtx.Entity.pdb

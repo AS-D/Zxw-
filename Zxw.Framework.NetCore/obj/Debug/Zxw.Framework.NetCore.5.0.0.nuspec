@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Zxw.Framework.NetCore</id>
+    <version>5.0.0</version>
+    <authors>victor.tzeng</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/VictorTzeng/Zxw.Framework.NetCore</projectUrl>
+    <description>基于EF Core的Code First模式的DotNetCore快速开发框架</description>
+    <releaseNotes>升级至.net5.0，如遇任何问题请至https://github.com/VictorTzeng/Zxw.Framework.NetCore/issues反馈，感谢支持。</releaseNotes>
+    <copyright>victor.tzeng@outlook.com</copyright>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="AspectCore.Extensions.Autofac" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="AspectCore.Extensions.DependencyInjection" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="AspectCore.Extensions.Hosting" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="AspectCore.Extensions.LightInject" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="AspectCore.Extensions.Reflection" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="AutoMapper" version="10.1.1" exclude="Build,Analyzers" />
+        <dependency id="AutoMapper.Extensions.Microsoft.DependencyInjection" version="8.1.0" exclude="Build,Analyzers" />
+        <dependency id="Autofac.Extensions.DependencyInjection" version="7.1.0" exclude="Build,Analyzers" />
+        <dependency id="Blueshift.EntityFrameworkCore.MongoDB-aleksamagicka" version="2.2.0-rtm-1" exclude="Build,Analyzers" />
+        <dependency id="CSRedisCore" version="3.6.5" exclude="Build,Analyzers" />
+        <dependency id="Caching.CSRedis" version="3.6.50" exclude="Build,Analyzers" />
+        <dependency id="DotNetCore.NPOI" version="1.2.2" exclude="Build,Analyzers" />
+        <dependency id="Exceptionless" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="Jil" version="2.17.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.2.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc.Formatters.Json" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc.ViewFeatures" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Abstractions" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.InMemory" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Proxies" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Relational" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite.Core" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.EnvironmentVariables" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Npgsql.EntityFrameworkCore.PostgreSQL" version="3.1.4" exclude="Build,Analyzers" />
+        <dependency id="Oracle.EntityFrameworkCore" version="3.19.80" exclude="Build,Analyzers" />
+        <dependency id="Pomelo.EntityFrameworkCore.MySql" version="3.2.4" exclude="Build,Analyzers" />
+        <dependency id="StackExchange.Redis.Extensions.JilCore" version="1.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Loader" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="Z.EntityFramework.Plus.EFCore" version="5.1.0" exclude="Build,Analyzers" />
+        <dependency id="log4net" version="2.0.12" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\bin\Debug\net5.0\Zxw.Framework.NetCore.runtimeconfig.json" target="lib\net5.0\Zxw.Framework.NetCore.runtimeconfig.json" />
+    <file src="D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\bin\Debug\net5.0\Zxw.Framework.NetCore.dll" target="lib\net5.0\Zxw.Framework.NetCore.dll" />
+  </files>
+</package>

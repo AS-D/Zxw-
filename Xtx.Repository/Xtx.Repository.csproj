@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xtx.IRepository\Xtx.IRepository.csproj" />
+    <ProjectReference Include="..\Zxw.Framework.NetCore\Zxw.Framework.NetCore.csproj" />
+  </ItemGroup>
+
+</Project>

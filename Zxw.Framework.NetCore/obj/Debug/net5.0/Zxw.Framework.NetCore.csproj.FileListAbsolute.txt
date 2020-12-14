@@ -1,0 +1,14 @@
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\bin\Debug\net5.0\Zxw.Framework.NetCore.deps.json
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\bin\Debug\net5.0\Zxw.Framework.NetCore.runtimeconfig.json
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\bin\Debug\net5.0\Zxw.Framework.NetCore.runtimeconfig.dev.json
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\bin\Debug\net5.0\Zxw.Framework.NetCore.dll
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\bin\Debug\net5.0\ref\Zxw.Framework.NetCore.dll
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\bin\Debug\net5.0\Zxw.Framework.NetCore.pdb
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\obj\Debug\net5.0\Zxw.Framework.NetCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\obj\Debug\net5.0\Zxw.Framework.NetCore.AssemblyInfoInputs.cache
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\obj\Debug\net5.0\Zxw.Framework.NetCore.AssemblyInfo.cs
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\obj\Debug\net5.0\Zxw.Framework.NetCore.csproj.CoreCompileInputs.cache
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\obj\Debug\net5.0\Zxw.Framework.NetCore.dll
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\obj\Debug\net5.0\ref\Zxw.Framework.NetCore.dll
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\obj\Debug\net5.0\Zxw.Framework.NetCore.pdb
+D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\obj\Debug\net5.0\Zxw.Framework.NetCore.genruntimeconfig.cache
