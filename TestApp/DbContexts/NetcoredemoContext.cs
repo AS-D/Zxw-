@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Zxw.Framework.NetCore.DbContextCore;
 using Zxw.Framework.NetCore.Options;
+using static Zxw.Framework.NetCore.Extensions.ServiceExtension;
 
 #nullable disable
 
@@ -13,7 +14,7 @@ namespace Xtx.Entity.NetCoreDemoDb
     {
       
 
-        public NetcoredemoContext(DbContextOption options)
+        public NetcoredemoContext(ServiceResolver options)
             : base(options)
         {
         }

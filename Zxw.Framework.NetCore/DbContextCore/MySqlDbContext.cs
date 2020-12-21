@@ -12,12 +12,13 @@ using MySql.Data.MySqlClient;
 using Zxw.Framework.NetCore.Extensions;
 using Zxw.Framework.NetCore.IDbContext;
 using Zxw.Framework.NetCore.Options;
+using static Zxw.Framework.NetCore.Extensions.ServiceExtension;
 
 namespace Zxw.Framework.NetCore.DbContextCore
 {
     public class MySqlDbContext: BaseDbContext, IMySqlDbContext
     {
-        public MySqlDbContext(DbContextOption option) : base(option)
+        public MySqlDbContext(ServiceResolver option) : base(option)
         {
 
         }

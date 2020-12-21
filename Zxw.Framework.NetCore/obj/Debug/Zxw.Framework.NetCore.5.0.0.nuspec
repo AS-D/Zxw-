@@ -50,7 +50,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\bin\Debug\net5.0\Zxw.Framework.NetCore.runtimeconfig.json" target="lib\net5.0\Zxw.Framework.NetCore.runtimeconfig.json" />
-    <file src="D:\Desktop\netcore\Zxw.Framework.NetCore\Zxw.Framework.NetCore\bin\Debug\net5.0\Zxw.Framework.NetCore.dll" target="lib\net5.0\Zxw.Framework.NetCore.dll" />
+    <file src="D:\Desktop\netcore\Zxw-\Zxw.Framework.NetCore\bin\Debug\net5.0\Zxw.Framework.NetCore.runtimeconfig.json" target="lib\net5.0\Zxw.Framework.NetCore.runtimeconfig.json" />
+    <file src="D:\Desktop\netcore\Zxw-\Zxw.Framework.NetCore\bin\Debug\net5.0\Zxw.Framework.NetCore.dll" target="lib\net5.0\Zxw.Framework.NetCore.dll" />
   </files>
 </package>

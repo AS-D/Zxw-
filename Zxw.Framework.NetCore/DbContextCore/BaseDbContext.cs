@@ -19,6 +19,7 @@ using Zxw.Framework.NetCore.IDbContext;
 using Zxw.Framework.NetCore.IoC;
 using Zxw.Framework.NetCore.Models;
 using Zxw.Framework.NetCore.Options;
+using static Zxw.Framework.NetCore.Extensions.ServiceExtension;
 
 namespace Zxw.Framework.NetCore.DbContextCore
 {
@@ -32,9 +33,10 @@ namespace Zxw.Framework.NetCore.DbContextCore
             return  SaveChanges();
         }
 
-        protected BaseDbContext(DbContextOption option)
+        protected BaseDbContext(ServiceResolver option)
         {
-            Option = option ?? ServiceLocator.Resolve<IOptions<DbContextOption>>().Value;
+          var c= this.GetType();
+            Option = option(c); //option ?? ServiceLocator.Resolve<IOptions<DbContextOption>>().Value;
         }
         /// <summary>
         /// 构造函数

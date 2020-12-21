@@ -7,13 +7,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Zxw.Framework.NetCore.IDbContext;
 using Zxw.Framework.NetCore.Options;
+using static Zxw.Framework.NetCore.Extensions.ServiceExtension;
 
 namespace Zxw.Framework.NetCore.DbContextCore
 {
     [MongoDatabase("ZxwMongoDb")]
     public class MongoDbContext:BaseDbContext, IMongoDbContext
     {
-        public MongoDbContext(DbContextOption option) : base(option)
+        public MongoDbContext(ServiceResolver option) : base(option)
         {
 
         }

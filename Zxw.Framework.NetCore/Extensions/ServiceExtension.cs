@@ -21,6 +21,7 @@ using AspectCore.DynamicProxy;
 using Zxw.Framework.NetCore.Web;
 using Zxw.Framework.NetCore.Attributes;
 using AspectCore.Extensions.Reflection;
+using System.Collections.Concurrent;
 
 namespace Zxw.Framework.NetCore.Extensions
 {
@@ -366,7 +367,9 @@ namespace Zxw.Framework.NetCore.Extensions
             var implService = provider.GetRequiredService(serviceType); 
             var option = provider.GetServices<DbContextOption>().FirstOrDefault(m => m.TagName == dbContextTagName);
 
-            var context = Activator.CreateInstance(implService.GetType(), option);
+            var implServiceType = dbcontexts.GetOrAdd(option.TagName, implService.GetType());
+            var serviceResolver = provider.GetRequiredService(typeof(ServiceResolver));
+            var context = Activator.CreateInstance(implServiceType, serviceResolver);
 
             return context;
         }
@@ -382,6 +385,12 @@ namespace Zxw.Framework.NetCore.Extensions
             });
         }
 
+        static ConcurrentDictionary<string, Type> dbcontexts = new ConcurrentDictionary<string, Type>();
+        static ConcurrentDictionary<Type, DbContextOption> dboptions = new ConcurrentDictionary<Type, DbContextOption>();
+
+        public delegate DbContextOption ServiceResolver(Type key);
+
+
         public static IServiceCollection AddDbContext<IT, T>(this IServiceCollection services, DbContextOption option) where IT:IDbContextCore where T:BaseDbContext,IT
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
@@ -393,6 +402,13 @@ namespace Zxw.Framework.NetCore.Extensions
             //    options.ModelAssemblyName = option.ModelAssemblyName;
             //    options.TagName = option.TagName;
             //});
+            dbcontexts.TryAdd(option.TagName ?? "db", typeof(T));
+            dboptions.TryAdd(typeof(T), option);
+            services.AddTransient<ServiceResolver>(ServiceResolver => key =>
+            {
+                dboptions.TryGetValue(key, out DbContextOption option);
+                return option;
+            });
             services.AddSingleton(option);
             return services.AddDbContext<IT, T>();
         }

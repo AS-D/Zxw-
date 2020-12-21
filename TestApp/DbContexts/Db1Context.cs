@@ -2,13 +2,14 @@
 using Xtx.Entity.Db1;
 using Zxw.Framework.NetCore.DbContextCore;
 using Zxw.Framework.NetCore.Options;
+using static Zxw.Framework.NetCore.Extensions.ServiceExtension;
 
 namespace Xtx.EntityFramework.Core.DbContexts
 {
     public class Db1Context : SqlServerDbContext
     {
 
-        public Db1Context(DbContextOption option) : base(option) { }
+        public Db1Context(ServiceResolver option) : base(option) { }
 
         public virtual DbSet<SystemSms> SystemSms { get; set; }
 

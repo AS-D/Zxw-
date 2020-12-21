@@ -7,12 +7,13 @@ using Microsoft.Extensions.Options;
 using Npgsql;
 using Zxw.Framework.NetCore.IDbContext;
 using Zxw.Framework.NetCore.Options;
+using static Zxw.Framework.NetCore.Extensions.ServiceExtension;
 
 namespace Zxw.Framework.NetCore.DbContextCore
 {
     public class PostgreSQLDbContext:BaseDbContext, IPostgreSQLDbContext
     {
-        public PostgreSQLDbContext(DbContextOption option) : base(option)
+        public PostgreSQLDbContext(ServiceResolver option) : base(option)
         {
 
         }

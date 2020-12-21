@@ -13,6 +13,7 @@ using Zxw.Framework.NetCore.Extensions;
 using Zxw.Framework.NetCore.IDbContext;
 using Zxw.Framework.NetCore.Models;
 using Zxw.Framework.NetCore.Options;
+using static Zxw.Framework.NetCore.Extensions.ServiceExtension;
 
 namespace Zxw.Framework.NetCore.DbContextCore
 {
@@ -23,7 +24,7 @@ namespace Zxw.Framework.NetCore.DbContextCore
         {
         }
 
-        public SqlServerDbContext(DbContextOption option) : base(option)
+        public SqlServerDbContext(ServiceResolver option) : base(option)
         {
 
         }

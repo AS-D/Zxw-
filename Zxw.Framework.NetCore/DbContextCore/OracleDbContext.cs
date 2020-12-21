@@ -7,12 +7,13 @@ using Microsoft.Extensions.Options;
 using Oracle.ManagedDataAccess.Client;
 using Zxw.Framework.NetCore.IDbContext;
 using Zxw.Framework.NetCore.Options;
+using static Zxw.Framework.NetCore.Extensions.ServiceExtension;
 
 namespace Zxw.Framework.NetCore.DbContextCore
 {
     public class OracleDbContext:BaseDbContext, IOracleDbContext
     {
-        public OracleDbContext(DbContextOption option) : base(option)
+        public OracleDbContext(ServiceResolver option) : base(option)
         {
 
         }

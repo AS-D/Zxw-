@@ -7,12 +7,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Zxw.Framework.NetCore.IDbContext;
 using Zxw.Framework.NetCore.Options;
+using static Zxw.Framework.NetCore.Extensions.ServiceExtension;
 
 namespace Zxw.Framework.NetCore.DbContextCore
 {
     public class SQLiteDbContext:BaseDbContext, ISQLiteDbContext
     {
-        public SQLiteDbContext(DbContextOption option) : base(option)
+        public SQLiteDbContext(ServiceResolver option) : base(option)
         {
 
         }

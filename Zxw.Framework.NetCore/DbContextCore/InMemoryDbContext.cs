@@ -5,12 +5,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Zxw.Framework.NetCore.IDbContext;
 using Zxw.Framework.NetCore.Options;
+using static Zxw.Framework.NetCore.Extensions.ServiceExtension;
 
 namespace Zxw.Framework.NetCore.DbContextCore
 {
     public class InMemoryDbContext:BaseDbContext,IInMemoryDbContext
     {
-        public InMemoryDbContext(DbContextOption option) : base(option)
+        public InMemoryDbContext(ServiceResolver option) : base(option)
         {
 
         }

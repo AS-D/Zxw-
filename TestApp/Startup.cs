@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Xtx.Entity.NetCoreDemoDb;
 using Xtx.EntityFramework.Core.DbContexts;
 using Zxw.Framework.NetCore.DbContextCore;
 using Zxw.Framework.NetCore.Extensions;
@@ -50,34 +51,36 @@ namespace TestApp
             //});
 
 
-            services.Configure<DbContextOption>(options =>
-            {
-                options.TagName = "db0";
-                options.ConnectionString =
-                    "Data Source=F:\\EF6.db;Version=3;";
-                //options.ModelAssemblyName = "Zxw.Framework.Website.Models";
-            });
+            //services.Configure<DbContextOption>(options =>
+            //{
+            //    options.TagName = "db0";
+            //    options.ConnectionString =
+            //        "Data Source=F:\\EF6.db;Version=3;";
+            //    //options.ModelAssemblyName = "Zxw.Framework.Website.Models";
+            //});
 
             services.AddDbContextFactory(factory =>
             {
-                factory.AddDbContext<SQLiteDbContext>(new DbContextOption()
-                {
-                    TagName = "db1",
-                    ConnectionString = "Data Source=F:\\EF6.db;Version=3;"
-                });
-                factory.AddDbContext<SqlServerDbContext>(new DbContextOption()
+                //factory.AddDbContext<SQLiteDbContext>(new DbContextOption()
+                //{
+                //    TagName = "db1",
+                //    ConnectionString = "Data Source=F:\\EF6.db;Version=3;"
+                //});
+                factory.AddDbContext<NetcoredemoContext>(new DbContextOption()
                 {
                     TagName = "db3",
                     ConnectionString = "data source=serverb;initial catalog=NetCoreDemo;persist security info=True;user id=sa;password=sa.123;multipleactiveresultsets=True;application name=EntityFramework",
                 });
-                factory.AddDbContext<SqlServerDbContext>(new DbContextOption()
+                factory.AddDbContext<Db1Context>(new DbContextOption()
                 {
                     TagName = "db2",
                     ConnectionString = "data source=serverb;initial catalog=TestDb1;persist security info=True;user id=sa;password=sa.123;multipleactiveresultsets=True;application name=EntityFramework",
                 });
+               
+
             });
 
-            services.AddScoped<IDbContextCore, SQLiteDbContext>(); //注入EF上下文
+            //services.AddScoped<IDbContextCore, SQLiteDbContext>(); //注入EF上下文
 
             services
                 .AddScopedAssembly("Xtx.IRepository", "Xtx.Repository");
